@@ -1,6 +1,6 @@
 services:
   amarillo:
-    image: amarillo-standard #"git.gerhardt.io/amarillo/amarillo:latest"
+    image: "git.gerhardt.io/amarillo/amarillo-mitanand:latest"
     environment:
     # Configure these for external enhancer and/or generator
     - ENHANCER_URL=${AMARILLO_ENHANCER_URL:-http://enhancer:80} 
@@ -37,4 +37,4 @@ services:
 
 #sudo docker compose --profile enhancer up   
 #sudo docker compose --profile generator up   
-#sudo docker compose --profile enhancer --profile generator up   
+#sudo docker compose --profile enhancer --profile generator up
